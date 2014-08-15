@@ -1,71 +1,77 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Arburako by arburako</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Arburako</h1>
-        <p></p>
-
-        <p class="view"><a href="https://github.com/arburako/arburako">View the Project on GitHub <small>arburako/arburako</small></a></p>
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Simple Multi-Item Slider with CSS Animations and jQuery</title>
+		<meta name="description" content="Simple Multi-Item Slider: Category slider with CSS animations" />
+		<meta name="keywords" content="jquery plugin, item slider, categories, apple slider, css animation" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="assets/css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
+		<script src="assets/js/modernizr.custom.63321.js"></script>
+	</head>
+	
 
 
-        <ul>
-          <li><a href="https://github.com/arburako/arburako/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/arburako/arburako/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/arburako/arburako">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+	<body>
+		<div class="container">	
+			
+            <nav class="codrops-demos">
+				<a href="index.html">Work</a>
+				<a href="page2.html">Story</a>
+				<a class="current-demo" href="page3.html">Slider</a>
+			</nav>
+			
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+			<header class="clearfix">
+				<h1>Simple Multi-Item Slider <span>Category slider with CSS animations</span></h1>
+			</header>
+			<div class="main">
+				<div id="mi-slider" class="mi-slider">
+					<ul>
+						<li><a href="#"><img src="assets/img/1.jpg" alt="img01"><h4>Boots</h4></a></li>
+						<li><a href="#"><img src="assets/img/2.jpg" alt="img02"><h4>Oxfords</h4></a></li>
+						<li><a href="#"><img src="assets/img/3.jpg" alt="img03"><h4>Loafers</h4></a></li>
+						<li><a href="#"><img src="assets/img/4.jpg" alt="img04"><h4>Sneakers</h4></a></li>
+					</ul>
+					<ul>
+						<li><a href="#"><img src="assets/img/5.jpg" alt="img05"><h4>Belts</h4></a></li>
+						<li><a href="#"><img src="assets/img/6.jpg" alt="img06"><h4>Hats &amp; Caps</h4></a></li>
+						<li><a href="#"><img src="assets/img/7.jpg" alt="img07"><h4>Sunglasses</h4></a></li>
+						<li><a href="#"><img src="assets/img/8.jpg" alt="img08"><h4>Scarves</h4></a></li>
+					</ul>
+					<ul>
+						<li><a href="#"><img src="assets/img/9.jpg" alt="img09"><h4>Casual</h4></a></li>
+						<li><a href="#"><img src="assets/img/10.jpg" alt="img10"><h4>Luxury</h4></a></li>
+						<li><a href="#"><img src="assets/img/11.jpg" alt="img11"><h4>Sport</h4></a></li>
+					</ul>
+					<ul>
+						<li><a href="#"><img src="assets/img/12.jpg" alt="img12"><h4>Carry-Ons</h4></a></li>
+						<li><a href="#"><img src="assets/img/13.jpg" alt="img13"><h4>Duffel Bags</h4></a></li>
+						<li><a href="#"><img src="assets/img/14.jpg" alt="img14"><h4>Laptop Bags</h4></a></li>
+						<li><a href="#"><img src="assets/img/15.jpg" alt="img15"><h4>Briefcases</h4></a></li>
+					</ul>
+					<nav>
+						<a href="#">Shoes</a>
+						<a href="#">Accessories</a>
+						<a href="#">Watches</a>
+						<a href="#">Bags</a>
+					</nav>
+				</div>
+			</div>
+		</div><!-- /container -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="assets/js/jquery.catslider.js"></script>
+		<script>
+			$(function() {
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+				$( '#mi-slider' ).catslider();
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/arburako">arburako</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+			});
+		</script>
+	</body>
 </html>
